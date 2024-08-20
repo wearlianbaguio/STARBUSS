@@ -1,0 +1,68 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply font-poppins overflow-x-hidden;
+  }
+  .container {
+    @apply max-w-[1600px] w-full px-4 mx-auto;
+  }
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-base;
+  }
+  p {
+    @apply text-sm;
+  }
+  .header__nav {
+    @apply bg-secondary flex flex-col gap-5 w-40 top-[6.2rem] fixed text-center justify-center py-5 font-semibold duration-700 right-[-100%]
+    lg:flex-row lg:h-auto lg:w-auto lg:static lg:bg-transparent;
+  }
+  .header__nav.open {
+    @apply right-0 z-50 overflow-y-hidden;
+  }
+  .header__nav li a {
+    @apply text-black/80 hover:text-primary;
+  }
+  .toggle__menu {
+    @apply flex flex-col gap-1 z-50 lg:hidden;
+  }
+  .toggle__menu span {
+    @apply content-["*"] bg-primary w-10 h-1 rounded-lg ease-out duration-700;
+  }
+  .toggle__menu span:last-child {
+    @apply content-["*"] bg-primary w-7 h-1 rounded-lg ease-out duration-700;
+  }
+  .toggle__menu.open span {
+    @apply content-["*"] bg-primary w-7 h-1 rounded-lg ease-out duration-700;
+  }
+  .toggle__menu.open span:last-child {
+    @apply content-["*"] bg-primary w-10 h-1 rounded-lg ease-out duration-700;
+  }
+  .backdrop {
+    @apply hidden;
+  }
+  .backdrop.open {
+    @apply block fixed top-[6.2rem] left-0 h-screen w-full backdrop-blur-sm duration-700 overflow-y-hidden;
+  }
+}
+
+@layer components {
+
+}
+
+@layer utilities {
+
+}
