@@ -1,4 +1,5 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,41 +28,85 @@
     @apply text-sm;
   }
   .header__nav {
-    @apply bg-secondary flex flex-col gap-5 w-40 top-[6.2rem] fixed text-center justify-center py-5 font-semibold duration-700 right-[-100%]
+    @apply bg-light flex flex-col gap-5 h-full w-[24rem] top-[5.3rem] fixed text-center justify-center py-5 font-semibold duration-500 right-[-100%]
     lg:flex-row lg:h-auto lg:w-auto lg:static lg:bg-transparent;
   }
   .header__nav.open {
-    @apply right-0 z-50 overflow-y-hidden;
+    @apply right-0 z-50 overflow-y-hidden z-50 mt-[-1px] pt-10 shadow-[inset_0px_4px_3px_rgba(50,50,50,0.15)] ;
   }
   .header__nav li a {
-    @apply text-black/80 hover:text-primary;
+    @apply text-black/80;
   }
   .toggle__menu {
     @apply flex flex-col gap-1 z-50 lg:hidden;
   }
   .toggle__menu span {
-    @apply content-["*"] bg-primary w-10 h-1 rounded-lg ease-out duration-700;
+    @apply content-["*"] bg-black w-[1.5rem] h-1 rounded-lg ease-out duration-700;
   }
-  .toggle__menu span:last-child {
-    @apply content-["*"] bg-primary w-7 h-1 rounded-lg ease-out duration-700;
+
+  .toggle__menu.open span:first-child {
+    @apply content-["*"] w-7 h-1 rounded-lg transform translate-y-[9px] rotate-[225deg] transition ease-out duration-700;
   }
-  .toggle__menu.open span {
-    @apply content-["*"] bg-primary w-7 h-1 rounded-lg ease-out duration-700;
+  .toggle__menu.open span:nth-child(2) {
+    @apply content-["*"] w-7 h-1 rounded-lg opacity-0 transition-all ease-out;
   }
   .toggle__menu.open span:last-child {
-    @apply content-["*"] bg-primary w-10 h-1 rounded-lg ease-out duration-700;
+    @apply content-["*"] w-7 h-1 rounded-lg transform translate-y-[-7.5px] rotate-[-225deg] transition ease-out duration-700;
   }
   .backdrop {
     @apply hidden;
   }
   .backdrop.open {
-    @apply block fixed top-[6.2rem] left-0 h-screen w-full backdrop-blur-sm duration-700 overflow-y-hidden;
+    @apply block fixed top-[5.3rem] left-0 h-screen w-full backdrop-brightness-50 duration-700 overflow-y-hidden;
   }
 }
 
 @layer components {
-
+  .btn {
+    @apply py-[0.1rem] px-4 bg-transparent border-transparent rounded-2xl shadow-[0_8px_24px_-15px_rgba(149,157,165,0.2)] scale-100 active:scale-95;
+  }
+  .btn.bg-lightt {
+    @apply bg-transparent border border-black text-black hover:bg-slate-300 hover:text-black border border-black;
+  }
+  .btn.bg-blackk {
+    @apply bg-black border border-black text-white hover:bg-slate-500 text-white;
+  }
+  .btn.bg-primarysc {
+    @apply bg-primary text-white text-white py-1;
+  }
+  .btn.bg-darkk {
+    @apply bg-dark text-white border border-white px-[10px];
+  }
+  .start__content {
+    @apply flex flex-col gap-6;
+  }
+  .start__card {
+    @apply flex flex-row;
+  }
+  .start__card h4 {
+    @apply font-semibold mb-5;
+  }
+  
+  .start__card img:first-child{
+    @apply mb-4;
+  }
+  .start__card img{
+    @apply w-[3rem] object-contain mr-4 flex mb-6;
+  }
+  .fave__tabs h4 i {
+    @apply text-xs text-yellow-500;
+  }
+  .fave__card {
+    @apply flex flex-col text-center justify-center;
+  }
+  .fave__card img {
+    @apply pt-[2rem];
+  }
+  .fave__card h5 {
+    @apply font-semibold py-5;
+  }
 }
+
 
 @layer utilities {
 

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starfucks® Rewards</title>
+    <title>
+      Starfucks® Rewards - Order Ahead, Endless Extras, Free Coffee: Starbucks
+      Coffee Company
+    </title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="icon" href="../img/logo.png" />
     <link
@@ -14,18 +17,43 @@
   <body>
     <!-- HEADER -->
     <header
-      class="header py-5 fixed w-full z-50 bg-white shadow-[0_8px_24px_-15px_rgba(149,157,165,0.2)]"
+      class="header py-5 w-full z-50 bg-white shadow-[0_8px_24px_-15px_rgba(149,157,165,0.2)]"
     >
       <div class="container">
         <div class="header__wrapper flex justify-between items-center">
-          <img class="w-[8rem]" src="../IMG/LOGO.png" alt="" />
-          <ul class="header__nav">
-            <li><a href="./home.html">HOME</a></li>
-            <li><a href="./about.html">ABOUT</a></li>
-            <li><a href="./menu.html">MENU</a></li>
-            <li><a href="./contact.html">CONTACTS</a></li>
-          </ul>
-          <div class="toggle__menu flex flex-col gap-1 z-50 lg:hidden">
+          <img class="w-[2.6rem]" src="../IMG/LOGO.png" alt="" />
+          <div
+            class="header__nav p-7 flex justify-start flex-wrap content-start"
+          >
+            <ul
+              class="header__left pt-[1.5rem] pb-[1.2rem] flex flex-col gap-7 items-start"
+            >
+              <li>
+                <a href="./reward.html"><h3>Menu</h3></a>
+              </li>
+              <li>
+                <a href="./reward.html"><h3>Rewards</h3></a>
+              </li>
+              <li>
+                <a href="./reward.html"><h3>Gift Cards</h3></a>
+              </li>
+            </ul>
+            <hr class="block w-[20.5rem] border-t-2" />
+            <div class="header__right flex flex-col items-start">
+              <div class="header__btns py-4 flex gap-3">
+                <a class="btn bg-lightt" href="">Sign in</a>
+                <a class="btn bg-blackk" href="">Join now</a>
+              </div>
+              <a class="hover:text-primary" href=""
+                ><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Find
+                a store</a
+              >
+            </div>
+          </div>
+          <div
+            class="toggle__menu flex flex-col gap-1 z-60 lg:hidden hover:bg-slate-200 rounded-[50%] px-[9px] py-3"
+          >
+            <span></span>
             <span></span>
             <span></span>
           </div>
@@ -36,17 +64,158 @@
 
     <!-- ANNOUNCEMENT -->
     <section
-      class="announce fixed w-full z-40 bg-white pt-28 pb-1 text-center font-semibold text-primary leading-3"
+      class="announce w-full h-[3rem] z-40 bg-dark font-semibold text-light flex align-middle"
     >
       <div class="container">
-        <div class="announce__wrapper">
-          <small
-            ><i class="fa-solid fa-bullhorn"></i> &nbsp; This website provides
-            information about our store. Online transactions are coming
-            soon.</small
-          >
+        <div
+          class="announce__wrapper flex flex-row justify-between pt-[0.6rem]"
+        >
+          <h4 class="pt-[0.2rem]">Starfucks® Rewards</h4>
+          <a class="mb-[5rem] btn bg-darkk" href="">Join in the app</a>
         </div>
       </div>
     </section>
+
+    <!-- BANNER -->
+    <section class="banner pt-[3rem]">
+      <div
+        class="banner__wrapper bg-bgReward bg-contain bg-no-repeat w-full h-[42rem] flex flex-col gap-[2rem] text-center items-center pt-[3rem]"
+      >
+        <h3 class="font-semibold">
+          FREE COFEE <br />
+          IS A TAP AWAY
+        </h3>
+        <p>Join now to start earning Rewards</p>
+        <a class="btn bg-primarysc" href="">Join in the app</a>
+        <a class="underline" href="">Or join online</a>
+      </div>
+    </section>
+
+    <!-- START -->
+    <section class="start">
+      <div class="container">
+        <div
+          class="start__title flex flex-col justify-center items-center pb-12 pt-8"
+        >
+          <h3 class="mb-[0.6rem]">Getting started is easy</h3>
+          <p>Earn Stars and get rewarded in a few easy steps.</p>
+        </div>
+        <ol class="start__wrapper h-[26rem] flex flex-col gap-[2rem]">
+          <li class="start__card">
+            <img src="../img/getting-started-1@2x.webp" alt="" />
+            <div class="start__text">
+              <h4>Download the Starbucks® app</h4>
+              <p>
+                <a class="underline text-primary" href="">Join in the app</a> to
+                get access to the full range of Starbucks® Rewards benefits. You
+                can also
+                <a class="underline text-primary" href="">join online.</a>
+              </p>
+            </div>
+          </li>
+          <li class="start__card">
+            <img src="../img/getting-started-2@2x.webp" alt="" />
+            <div class="start__text">
+              <h4>Order and pay how you'd like</h4>
+              <p>
+                Use cash, credit/debit card or save some time and pay right
+                through the app. You’ll collect Stars all ways.
+                <a class="underline text-primary" href="">Learn how</a>
+              </p>
+            </div>
+          </li>
+          <li class="start__card">
+            <img src="../img/getting-started-3@2x.webp" alt="" />
+            <div class="start__text">
+              <h4>Earn Stars, get Rewards</h4>
+              <p>
+                As you earn Stars, you can redeem them for Rewards—like free
+                food, drinks, and more. Start redeeming with as little as 25
+                Stars!
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAVE -->
+    <section class="fave">
+      <div class="fave__wrapper">
+        <div class="fave__content bg-mint flex flex-col text-center py-5">
+          <!-- fave tabs -->
+          <h3 class="font-semibold mb-5 mt-6">Get your favorites for free</h3>
+          <div class="fave__tabs flex flex-row justify-around">
+            <h4 class="fave__text active" id="tabs-1">
+              25<i class="fa-solid fa-star"></i>
+            </h4>
+            <h4 class="fave__text" id="tabs-2">
+              100<i class="fa-solid fa-star"></i>
+            </h4>
+            <h4 class="fave__text" id="tabs-3">
+              200<i class="fa-solid fa-star"></i>
+            </h4>
+            <h4 class="fave__text" id="tabs-4">
+              300<i class="fa-solid fa-star"></i>
+            </h4>
+            <h4 class="fave__text" id="tabs-5">
+              400<i class="fa-solid fa-star"></i>
+            </h4>
+          </div>
+        </div>
+        <div
+          class="fave__details shadow-[inset_0px_4px_3px_rgba(50,50,50,0.12)] bg-secondary w-full"
+        >
+          <div class="fave__card">
+            <img src="../img/25.webp" alt="" />
+            <h5>Customize your drink</h5>
+            <p>
+              Make your drink just right with an extra espresso shot, nondairy
+              milk or a dash of your favorite syrup.
+            </p>
+          </div>
+          <div class="fave__card">
+            <img src="../img/100.webp" alt="" />
+            <h5>
+              Brewed hot or iced coffee or tea, bakery item, packaged snack and
+              more
+            </h5>
+            <p>
+              Treat yourself to an iced coffee, buttery croissant, bag of chips
+              and more.
+            </p>
+          </div>
+          <div class="fave__card">
+            <img src="../img/200.webp" alt="" />
+            <h5>
+              Handcrafted drink (Cold Brew, lattes and more) or hot breakfast
+            </h5>
+            <p>
+              Turn good mornings great with a delicious handcrafted drink of
+              your choice, breakfast sandwich or oatmeal on us.
+            </p>
+          </div>
+          <div class="fave__card">
+            <img src="../img/300.webp" alt="" />
+            <h5>Sandwich, protein box or at-home coffee</h5>
+            <p>
+              Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag
+              of coffee—including Starbucks VIA Instant®.
+            </p>
+          </div>
+          <div class="fave__card">
+            <img src="../img/400.webp" alt="" />
+            <h5>Select Starbucks® merchandise</h5>
+            <p>
+              Take home a signature cup, drink tumbler or your choice of coffee
+              merch up to $20.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <script src="./js/toggle__menu.js"></script>
   </body>
 </html>
