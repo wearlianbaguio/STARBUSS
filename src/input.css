@@ -1,9 +1,7 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @layer base {
   body {
@@ -32,7 +30,7 @@
     lg:flex-row lg:h-auto lg:w-auto lg:static lg:bg-transparent;
   }
   .header__nav.open {
-    @apply right-0 z-50 overflow-y-hidden z-50 mt-[-1px] pt-10 shadow-[inset_0px_4px_3px_rgba(50,50,50,0.15)] ;
+    @apply right-0 z-50 overflow-y-hidden z-50 mt-[-1px] pt-10 shadow-[inset_0px_4px_3px_rgba(50,50,50,0.15)];
   }
   .header__nav li a {
     @apply text-black/80;
@@ -77,6 +75,7 @@
   .btn.bg-darkk {
     @apply bg-dark text-white border border-white px-[10px];
   }
+
   .start__content {
     @apply flex flex-col gap-6;
   }
@@ -86,28 +85,113 @@
   .start__card h4 {
     @apply font-semibold mb-5;
   }
-  
-  .start__card img:first-child{
+
+  .start__card img:first-child {
     @apply mb-4;
   }
-  .start__card img{
+  .start__card img {
     @apply w-[3rem] object-contain mr-4 flex mb-6;
   }
   .fave__tabs h4 i {
     @apply text-xs text-yellow-500;
   }
   .fave__card {
-    @apply flex flex-col text-center justify-center;
+    @apply flex flex-col text-center justify-center h-[27rem];
   }
-  .fave__card img {
-    @apply pt-[2rem];
+  .fave__card {
+    @apply px-3;
   }
   .fave__card h5 {
     @apply font-semibold py-5;
   }
+  .fave__tabs h4 {
+    @apply flex;
+  }
+  .fave__tabs i {
+    @apply text-xs pt-[4px];
+  }
+  .fave__tabs span {
+    @apply font-semibold pb-4 pl-[2rem] pr-[1.5rem] flex;
+  }
+  .fave__tabs span.active {
+    @apply enlarged__underline inline;
+  }
+  .fave__details {
+    @apply pb-[1.2rem] hidden;
+  }
+  .fave__details.active {
+    @apply block;
+  }
+
+  .extra__card {
+    @apply flex gap-4;
+  }
+  .extra__card img {
+    @apply pt-3;
+  }
+  .extra__card:nth-child(2) img {
+    @apply pt-1;
+  }
+  .extra__content {
+    @apply flex flex-col gap-4;
+  }
+  .extra__content h5 {
+    @apply font-semibold;
+  }
+  .extra__content a {
+    @apply humohober;
+  }
+
+  .pay__dolar h4 {
+    @apply font-semibold;
+  }
+  .pay__card {
+    @apply flex gap-4 pt-[2rem];
+  }
+
+  .link__card {
+    @apply flex flex-row gap-4 py-6;
+  }
+  .link__content a:first-child {
+    @apply text-primary humohober;
+  }
+  .link__content a:last-child {
+    @apply text-xs;
+  }
+  .link__content i {
+    @apply pl-[0.5rem];
+  }
+  .ques__wrapper i {
+    @apply pl-[0.5rem];
+  }
+
+  .word i {
+    @apply text-primary pl-[0.5rem];
+  }
+  .word__halt h4 {
+    @apply text-slate-600 font-semibold;
+  }
+
+  .info__story h4,
+  .info__story i {
+    @apply bg-white text-black px-3 py-2 font-bold duration-500 flex justify-between items-center cursor-pointer duration-500 delay-150 transition-all;
+  }
+  .info__story ul {
+    @apply bg-slate-50 h-auto max-h-0 overflow-hidden ease-in-out text-justify px-3 duration-500 delay-100 transition-all;
+  }
+  .info__story i.open {
+    @apply rotate-[180deg] duration-500 delay-150 transition-all;
+  }
+  .info__story ul.open {
+    @apply max-h-[50rem] bg-slate-50 p-3 duration-500 delay-100 transition-all;
+  }
 }
 
-
 @layer utilities {
-
+  .enlarged__underline {
+    @apply border-b-[4px] block border-primary;
+  }
+  .humohober {
+    @apply text-primary underline hover:no-underline;
+  }
 }

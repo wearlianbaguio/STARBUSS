@@ -13,6 +13,7 @@ module.exports = {
         dark: "#1E3932",
         black: "#000000",
         mint: "#F1F8F5",
+        clay: "#F2F0EB",
         // tertiary: "#223c5f",
       },
       backgroundImage: {

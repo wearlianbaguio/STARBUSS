@@ -1,4 +1,4 @@
-const tabs = document.querySelectorAll(".fave__tabs h4");
+const tabs = document.querySelectorAll(".fave__tabs span");
 const contents = document.querySelectorAll(".fave__details");
 
 tabs.forEach((tab) => {
