@@ -78,10 +78,10 @@
     @apply text-black invert border-[1px] rounded-[50%] bg-[#f0e8d5] p-[0.3rem] scale-75 pl-[0.36rem] ml-[-0.4rem];
   }
   .footer__icon a:nth-child(5) i{
-    @apply text-black invert border-[1px] rounded-[50%] bg-[#f0e8d5] p-[0.6rem] scale-[.65] pl-[0.5rem] mx-[-0.9rem];
+    @apply text-black invert border-[1px] rounded-[50%] bg-[#f0e8d5] p-[0.6rem] scale-[.60] pl-[0.5rem] mx-[-0.9rem];
   }
   .footer__icon a:last-child i{
-    @apply text-black invert border-[1px] rounded-[50%] bg-[#f0e8d5] p-[0.5rem] scale-[.70] pl-[0.4rem] mx-[-0.2rem];
+    @apply text-black invert border-[1px] rounded-[50%] bg-[#f0e8d5] p-[0.5rem] scale-[.65] pl-[0.4rem] mx-[-0.2rem];
   }
   .footer__icon a:nth-child(4){
     @apply text-slate-900 hover:bg-slate-200 rounded-[50%] px-[0.6rem] pr-[0.2rem] py-[0.1rem] delay-200 duration-300 transition ease-out;
@@ -202,6 +202,13 @@
   .pay__dolar {
     @apply lg:flex lg:flex-row;
   }
+  .pay__dolar:first-child {
+    @apply lg:gap-[7rem];
+  }
+  .pay__dolar:last-child {
+    @apply lg:gap-[4rem];
+  }
+
   .pay__card {
     @apply flex gap-4 pt-[2rem];
   }
@@ -210,7 +217,7 @@
   }
 
   .link__card {
-    @apply flex flex-row gap-4 py-6;
+    @apply flex flex-row gap-4 py-6 lg:flex lg:flex-col lg:justify-center lg:text-center lg:flex-wrap max-w-[24rem];
   }
   .link__content a:first-child {
     @apply text-primary humohober;
@@ -221,8 +228,15 @@
   .link__content i {
     @apply pl-[0.5rem];
   }
+  
   .ques__wrapper i {
     @apply pl-[0.5rem];
+  }
+  .link__card img{
+    @apply lg:w-[48%];
+  }
+  .link__img {
+    @apply lg:flex lg:justify-center;
   }
 
   .word i {
@@ -234,10 +248,10 @@
 
   .info__story h4,
   .info__story i {
-    @apply bg-white text-black px-3 py-2 duration-500 flex justify-between items-center cursor-pointer duration-500 delay-150 transition-all;
+    @apply bg-white text-black px-3 py-2 duration-500 flex justify-between items-center cursor-pointer duration-500 delay-150 transition-all lg:pointer-events-none; 
   }
   .info__story i.open {
-    @apply rotate-[180deg] duration-500 delay-150 transition-all;
+    @apply rotate-[180deg] duration-500 delay-150 transition-all lg:hidden;
   }
   .info__story ul {
     @apply h-auto max-h-0 overflow-hidden ease-in-out text-justify px-3 duration-500 transition-all flex flex-col gap-4 text-sm text-slate-500;
@@ -245,6 +259,16 @@
   .info__story ul.open {
     @apply max-h-[50rem] p-3 duration-500 delay-100 transition-all;
   }
+
+  .info__story a {
+    @apply hover:text-black;
+  }
+  .info__story{
+    @apply lg:max-w-[13rem];
+  }
+
+
+  
 }
 
 

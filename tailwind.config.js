@@ -19,8 +19,16 @@ module.exports = {
       backgroundImage: {
         bgReward:
           "url('../img/455044342_1184467975940622_4744910648108961620_n.webp')",
+
+        borderLink:
+          "url('../img/456137707_1552605932304516_5451144727757624836_n.webp')",
+
+        bgSecond:
+          "url('../img/d4e9e2.png')",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-border-image'),
+  ],
 };
